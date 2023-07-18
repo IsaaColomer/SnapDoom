@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0da81e8374076a4ca8b82b53fc8960a, type: 3}
   m_Name: GameVariables
   m_EditorClassIdentifier: 
-  moveDistance: 100
+  moveDistance: 5
   turnDegrees: 90
+  moveVelocity: 90
+  timeToWait: 0.055
