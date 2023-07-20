@@ -40,7 +40,6 @@ public class BasicEnemyMovement : MonoBehaviour
         {
             agent.SetDestination(transform.position);
         }
-        Debug.Log("This is the distance to player: " + d);
     }
     private void LookAtPlayer()
     {
