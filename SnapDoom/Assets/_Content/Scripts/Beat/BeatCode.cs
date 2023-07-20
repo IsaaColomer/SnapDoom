@@ -15,7 +15,6 @@ public class BeatCode : MonoBehaviour
     private void Start()
     {
         src = GetComponent<AudioSource>();
-        post.enabled = false;
     }
 
     public void PlayBeat()
