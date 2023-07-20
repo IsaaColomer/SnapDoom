@@ -75,6 +75,5 @@ public class BasicEnemyMovement : MonoBehaviour
 
         anim.Play(hitAnimationName);
         lifes--;
-        Debug.Log(lifes);
     }
 }

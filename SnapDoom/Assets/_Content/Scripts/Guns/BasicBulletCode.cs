@@ -24,7 +24,6 @@ public class BasicBulletCode : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.transform.gameObject.tag);
         if(collision.transform.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<BasicEnemyMovement>().GetHitAndGetHitOrDie();
