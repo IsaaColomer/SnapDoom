@@ -7,12 +7,13 @@ public class BasicBulletCode : MonoBehaviour
     private Rigidbody rb;
     public GunsVariables gunsVariables;
     private Vector3 direction;
+    [SerializeField] private GameObject gameObjectToDelete;
     // Start is called before the first frame update
     void Start()
     {
         Launch();
     }
-    public void GetDirection(Vector3 _direction)
+    public void SetDirection(Vector3 _direction)
     {
         direction = _direction;
     }
@@ -26,13 +27,12 @@ public class BasicBulletCode : MonoBehaviour
         Debug.Log(collision.transform.gameObject.tag);
         if(collision.transform.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<BasicEnemyMovement>().GetHit();
-            WaitToDestroy();
+            collision.gameObject.GetComponent<BasicEnemyMovement>().GetHitAndGetHitOrDie();
+            Destroy(gameObjectToDelete);
         }
     }
-    private IEnumerator WaitToDestroy()
+    public void SetGameObjectId(GameObject go)
     {
-        yield return new WaitForEndOfFrame();
-        Destroy(this.gameObject);
+        gameObjectToDelete = go;
     }
 }

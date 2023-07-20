@@ -156,4 +156,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ae49edbd70c2244b855b5aa20205ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesVariables: {fileID: 11400000, guid: 0220ac15cf0792848b277fb06349e7fa, type: 2}
   hitAnimationName: Spider_GetHit

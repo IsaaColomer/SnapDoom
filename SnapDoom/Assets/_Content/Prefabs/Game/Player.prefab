@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunsVariables: {fileID: 11400000, guid: 5a65878a99736ab4786546745ee0bfeb, type: 2}
+  enemiesInLevel: []
   gunFiringPoint: {fileID: 7397472161131797830}
 --- !u!1 &6290384602239438187
 GameObject:
@@ -223,7 +224,7 @@ GameObject:
   - component: {fileID: 6290384602239438188}
   - component: {fileID: 6290384602239438176}
   - component: {fileID: 3065480365117831843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
