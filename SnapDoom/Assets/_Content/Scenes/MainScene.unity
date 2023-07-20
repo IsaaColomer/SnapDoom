@@ -928,6 +928,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider_Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4836669436127947467, guid: 3c8098319325def438d9255d6786aefd,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836669436127947467, guid: 3c8098319325def438d9255d6786aefd,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836669436127947467, guid: 3c8098319325def438d9255d6786aefd,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8098319325def438d9255d6786aefd, type: 3}
 --- !u!1001 &4836669434234256162
@@ -941,21 +956,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836669436127947464, guid: 3c8098319325def438d9255d6786aefd,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836669436127947464, guid: 3c8098319325def438d9255d6786aefd,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836669436127947464, guid: 3c8098319325def438d9255d6786aefd,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4836669436127947464, guid: 3c8098319325def438d9255d6786aefd,
         type: 3}

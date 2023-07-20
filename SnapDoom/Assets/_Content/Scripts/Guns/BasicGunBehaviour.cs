@@ -5,7 +5,7 @@ using System.Linq;
 public class BasicGunBehaviour : MonoBehaviour
 {
     public GunsVariables gunsVariables;
-    private List<GameObject> enemiesInLevel;
+    [SerializeField] private List<GameObject> enemiesInLevel;
     public Transform gunFiringPoint;
     private Transform player;
     private void Start()

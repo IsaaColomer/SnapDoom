@@ -28,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4836669436127947466}
-  m_LocalRotation: {x: -0, y: -0.09245129, z: -0, w: 0.9957172}
+  m_LocalRotation: {x: 0, y: -0.09244874, z: 0, w: 0.99571747}
   m_LocalPosition: {x: -1.672, y: 1.2, z: 4.331}
-  m_LocalScale: {x: 8.762058, y: 8.762058, z: 8.762058}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -156,3 +156,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ae49edbd70c2244b855b5aa20205ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitAnimationName: Spider_GetHit

@@ -7,6 +7,7 @@ public class BasicEnemyMovement : MonoBehaviour
     private Animator anim;
     private Transform player;
     private NavMeshAgent agent;
+    public string hitAnimationName;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -44,5 +45,10 @@ public class BasicEnemyMovement : MonoBehaviour
     private void LookAtPlayer()
     {
         transform.LookAt(player);
+    }
+
+    public void GetHit()
+    {
+        anim.Play(hitAnimationName);
     }
 }

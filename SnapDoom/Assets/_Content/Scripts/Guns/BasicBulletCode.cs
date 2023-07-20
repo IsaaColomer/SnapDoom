@@ -21,4 +21,18 @@ public class BasicBulletCode : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.AddForce(direction.normalized * gunsVariables.bulletVelocity, ForceMode.Acceleration);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.transform.gameObject.tag);
+        if(collision.transform.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<BasicEnemyMovement>().GetHit();
+            WaitToDestroy();
+        }
+    }
+    private IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForEndOfFrame();
+        Destroy(this.gameObject);
+    }
 }
