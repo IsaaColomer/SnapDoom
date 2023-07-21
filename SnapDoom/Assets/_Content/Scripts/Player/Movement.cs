@@ -48,7 +48,10 @@ public class Movement : MonoBehaviour
         {
             if(debug)
                 Instantiate(moveDebugCube, hit.point, Quaternion.identity);
-            ThrowRaycastToMove(hit.point, -hit.transform.up, 0);
+            if(Physics.Raycast(hit.point, -hit.transform.up, out hit, gameVariables.moveDistance))
+            {
+                MovePlayerToPosition(new Vector3(hit.point.x, transform.position.y, hit.point.z), fb);
+            }
         }
         else
         {

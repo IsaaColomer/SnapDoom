@@ -16,4 +16,5 @@ MonoBehaviour:
   cadence: 0.15
   bulletPrefab: {fileID: 7425476654714040771, guid: e16b2d8960343ee4787de8022e1f7dd1,
     type: 3}
-  bulletVelocity: 1000
+  bulletVelocity: 50
+  offBeatVelocity: 45

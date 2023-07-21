@@ -11,14 +11,16 @@ public class BasicEnemyMovement : MonoBehaviour
     public string hitAnimationName;
     private float lifes;
     private BasicGunBehaviour guns;
+    private BeatCode beatCode;
     private void Awake()
     {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<Transform>();
         agent = GetComponent<NavMeshAgent>();
-        agent.velocity = new Vector3(0.15f, 0.15f, 0.15f);
+        agent.velocity = new Vector3(10f, 10f, 10f);
         lifes = enemiesVariables.spiderLifes;
         guns = FindObjectOfType<BasicGunBehaviour>();
+        beatCode = FindObjectOfType<BeatCode>();
         LookAtPlayer();
     }
     // Start is called before the first frame update

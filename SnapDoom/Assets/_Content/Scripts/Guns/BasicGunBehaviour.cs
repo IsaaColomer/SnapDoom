@@ -36,7 +36,7 @@ public class BasicGunBehaviour : MonoBehaviour
     }
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha5))
+        if(Input.GetMouseButtonDown(0))
         {
             Shoot();
         }

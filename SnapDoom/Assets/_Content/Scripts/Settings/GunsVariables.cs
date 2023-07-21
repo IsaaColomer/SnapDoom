@@ -7,4 +7,5 @@ public class GunsVariables : ScriptableObject
     public float cadence = 0.15f;
     public GameObject bulletPrefab;
     public float bulletVelocity;
+    public float offBeatVelocity = 2f;
 }
